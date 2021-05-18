@@ -1,0 +1,50 @@
+
+.all__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #060b26;
+    color:white;
+}
+
+.list__container {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.social-media__container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin: 20px 0px 20px 0px;
+}
+
+ul > li {
+    list-style: none;
+}
+
+ul > li:hover {
+    color:#1a83ff;
+    transition: all 0.3s ease;
+}
+.fb {
+    color:#1a83ff;
+    font-size: 50px;
+}
+
+.yt {
+    color:rgb(212, 13, 13);
+    font-size: 50px;
+}
+
+.ig {
+    color:sienna;
+    font-size: 50px;
+}
+
+.fb:hover, .yt:hover, .ig:hover {
+    color:white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}

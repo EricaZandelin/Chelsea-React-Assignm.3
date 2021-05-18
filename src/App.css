@@ -1,38 +1,268 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Home*/
+
+.frontpage-pic {
+  max-width: 100%;
+  height: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 1200px;
+  font-size: 20px;
+}
+
+.main__heading {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.main-paragraph {
+  background-color: white;
+  opacity: 0.8;
+  width: 70%;
+}
+
+
+.games {
+  display: flex;
+  height: 90vh;
+}
+
+
+/* MIDPAGE */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1950px;
+  font-size: 20px;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.text-pic__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.midpage-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.about-text__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 1px;
+  width: 70%;
+}
+
+/* Games */ 
+
+.games {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  
+}
+
+.question-btn {
+  width: 140px;
+  height: 80px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.question-btn:hover {
+  color:white;
+  background-color: black;
+  transition: all 0.5s ease;
+
+}
+
+/* CONTACT */
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color:white;
+  height: 1000px;
+}
+
+.head-contact{
+  margin-bottom: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  background-color: #1a83ff;
+  height: 400px;
+}
+
+input {
+  border-radius: 3px;
+  text-align: center;
+  height: 30px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.select {
+  border-radius: 3px;
+  max-width: 200px;
+  width: 100%;
+}
+
+.contact-btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  color: white;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+
+
+.fact-btn {
+  max-width: 200px;
+  height: 30px;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px white;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.fact-btn:hover {
+  background-color: #1a83ff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Bara lätta MEDIA Q. */
+
+/* HOME -Q */
+
+@media screen and (max-width:600px) {
+
+  .home {
+    height: 1600px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main__heading {
+    width: 70%;
+    font-size: 23px;
+  }
+
+  .main-paragraph {
+    font-size: 18px;
+  }
+
+}
+
+/* About - Q*/
+
+@media screen and (min-width:1300px) and (max-width:1500px) {
+
+ .about {
+   height: 2300px;
+ }
+
+}
+
+
+@media screen and (min-width:700px) and (max-width:1299px) {
+
+  .about {
+    height: 2100px;
+  }
+
+  .about-text__container {
+    font-size: 15px;
+  }
+ 
+ }
+
+ @media screen and (min-width:350px) and (max-width:699px) {
+
+  .about {
+    height: 2200px;
+  }
+
+  .about-text__container {
+    font-size: 12px;
+    width: 80%;
+
+  }
+ 
+ }
+
+ @media screen and (min-width:0px) and (max-width:349px) {
+
+  .about {
+    height: 2500px;
+  }
+
+  .about-text__container {
+    font-size: 12px;
+    width: 80%;
+
+  }
+ 
+ }
+
+ 
+/* contact - Q */
+
+
+@media screen and (max-width:700px) {
+  .head-contact {
+    font-size: 20px;
+    width: 70%;
+  }
+
+  .form {
+    width: 70%;
+  }
+
+  input {
+    width: 200px;
   }
 }
